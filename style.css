@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 43.75px;
+  height: 43.75px;
+}
+.black {
+  background-color: black;
+}
+.hover {
+  background-color: rgb(224, 234, 242);
+}
+#container {
+  display: flex;
+  width: 1000px;
+  height: 750px;
+  flex-wrap: wrap;
+  border: 3px solid black;
+}

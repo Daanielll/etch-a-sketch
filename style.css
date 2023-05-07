@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  font-family: Helvetica, sans-serif;
+  color: #5e717a;
 }
 body {
   height: 100vh;
@@ -7,22 +9,99 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #a9def9;
+  gap: 50px;
 }
 
-.square {
-  width: 43.75px;
-  height: 43.75px;
-}
-.black {
-  background-color: black;
-}
-.hover {
-  background-color: rgb(224, 234, 242);
-}
 #container {
   display: flex;
-  width: 1000px;
-  height: 750px;
+  width: 700px;
+  height: 700px;
   flex-wrap: wrap;
-  border: 3px solid black;
+  background-color: white;
+}
+.all {
+  display: flex;
+  gap: 50px;
+  border-radius: 15px;
+}
+.back {
+  display: flex;
+  flex-direction: column;
+  background-color: #d0f4de;
+  text-align: center;
+  padding: 75px;
+  border-radius: 15px;
+  gap: 35px;
+}
+.back .label {
+  font-size: 72px;
+  font-family: monospace;
+  font-weight: bold;
+}
+.style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 50px;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.color {
+  border: none;
+  appearance: none;
+  width: 200px;
+  height: 100px;
+  background-color: transparent;
+  cursor: pointer;
+}
+button {
+  background-color: #fcf6bd;
+  border: none;
+  padding: 18px 45px;
+  width: 200px;
+  font-weight: 600;
+  font-size: 36px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 100;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.slider {
+  width: 200px;
+  height: 15px;
+  -webkit-appearance: none;
+  background: #fcf6bd;
+  outline: none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 40%;
+  background: #a9def9;
+  cursor: pointer;
+  box-shadow: -407px 0 0 400px #5e717a;
+}
+.selected {
+  background-color: #5e717a;
+  color: #fcf6bd;
 }

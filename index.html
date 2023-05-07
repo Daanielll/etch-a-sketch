@@ -8,16 +8,33 @@
     <script src="script.js" defer></script>
     <title>Etch-A-Sketch</title>
   </head>
-  <body>
-    <div id="container"></div>
-    <div class="btns">
-      <button class="small">Small</button>
-      <button class="medium">Medium</button>
-      <button class="big">Big</button>
-      <input class="slider" type="range" value="16" min="1" max="64" step="1" />
+  <body draggable="false">
+    <div class="back">
+      <div class="label">Etch A Sketch</div>
+      <div class="all">
+        <div class="style">
+          <div class="btns">
+            <button class="paint selected">Paint</button>
+            <button class="eraser">Eraser</button>
+          </div>
+          <button class="clear">Clear</button>
+          <div class="slide">
+            <label for="slider">16x16</label>
+            <input
+              class="slider"
+              type="range"
+              value="16"
+              min="1"
+              max="64"
+              step="1"
+              name="slide"
+            />
+          </div>
+
+          <input class="color" type="color" />
+        </div>
+        <div draggable="false" id="container"></div>
+      </div>
     </div>
-    <button class="clear">CLEAR</button>
-    <input class="ereaser" type="checkbox" />
-    <input class="color" type="color" />
   </body>
 </html>

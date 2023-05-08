@@ -37,7 +37,8 @@ function generateBoard(size) {
   clearBoard();
   for (let i = 0; i < Math.pow(size, 2); i++) {
     const d = document.createElement("div");
-    d.style.cssText = `width: ${700 / size}px; height: ${700 / size}px;`;
+    d.style.cssText = `user-drag: none;
+    width: ${700 / size}px; height: ${700 / size}px;`;
     d.addEventListener("mouseover", paint);
     d.addEventListener("mousedown", () => {
       if (mode === "paint") d.style.background = color.value;
